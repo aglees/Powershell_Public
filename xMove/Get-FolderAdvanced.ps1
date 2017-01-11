@@ -11,7 +11,7 @@
    If no parent is provided the root VM folder of the datacenter will be used as parent.
    If no folder is provided, the root VM folder of the datacenter will be used as the folder.
 .EXAMPLE
-   $Datacenter = "UKH-SL1"
+   $Datacenter = ""
    $Target = "Working_Links_038952\Infrastructure"
    Get-Folder-Advanced -MyFolder $Target -Datacenter $Datacenter -Conn $conn
 .EXAMPLE
@@ -30,7 +30,7 @@ function Get-Folder-Advanced
         [string]$MyFolder="",
 
         # Param2 Datacenter << the datacenter to search >>
-        [string]$Datacenter="UKH-SL1",
+        [string]$Datacenter="",
         
         # Param 3 Conn << vCenter connection >>
         [VMware.VimAutomation.ViCore.Impl.V1.VIServerImpl]$Conn
